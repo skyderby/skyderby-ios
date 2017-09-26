@@ -1,0 +1,110 @@
+update_fastlane
+
+default_platform :ios
+
+############################## PRE ##############################
+
+before_all do
+  clean_up
+  ensure_git_status_clean
+end
+
+######################### PUBLIC LANES ##########################
+
+desc "Setup workspace"
+lane :setup do
+  # Install SwiftGen
+  sh "brew install swiftgen"
+  # Install SwiftLint
+  sh "brew install swiftlint"
+  # Install Carthage
+  sh "brew install configen"
+  # Install Carthage
+  sh "brew install carthage"
+  # Verify project dependencies
+  carthage update
+end  
+
+desc "Submit a new Release build to App Store/TestFlight"
+lane :release do
+  itc(scheme: "Release")    
+end
+
+desc "Download dSYM files from iTC and upload them to Crashlytics"
+lane :refresh_dsyms do
+  download_dsyms
+  upload_symbols_to_crashlytics
+end
+
+######################### PRIVATE LANES #########################
+
+private_lane :itc do |options|
+  scheme = options[:scheme]
+  
+  match(type: "appstore", readonly: true)
+  
+  gym(scheme: scheme)
+  get_version_numbers
+  
+  pilot(skip_submission: true, skip_waiting_for_build_processing: true)
+  
+  # add tag 'appstore/1.3.0/156'
+  tag_release(prefix: "appstore")
+  
+  post_to_slack(scheme: scheme, destination: "App Store")
+end
+
+############################# UTIL ##############################
+
+private_lane :get_version_numbers do |options|
+  Actions.lane_context[SharedValues::VERSION_NUMBER]  = get_ipa_info_plist_value(key: "CFBundleShortVersionString")
+  Actions.lane_context[SharedValues::BUILD_NUMBER]    = get_ipa_info_plist_value(key: "CFBundleVersion")
+end
+
+private_lane :tag_release do |options|
+  prefix = options[:prefix]
+  
+  current_version   = Actions.lane_context[SharedValues::VERSION_NUMBER]
+  current_build     = Actions.lane_context[SharedValues::BUILD_NUMBER]
+  
+  tag_name = "#{prefix}/#{current_version}/#{current_build}"
+  add_git_tag(tag: tag_name, sign: true)
+  push_git_tags
+end
+
+private_lane :post_to_slack do |options|
+  scheme      = options[:scheme]
+  
+  environment = scheme.upcase
+  destination = options[:destination]
+  
+  current_version   = Actions.lane_context[SharedValues::VERSION_NUMBER]
+  current_build     = Actions.lane_context[SharedValues::BUILD_NUMBER]
+
+  slack(
+    message: "<!here|here>: New iOS build *v#{current_version} (#{current_build})* running on `#{environment}` has been submitted to *#{destination}*  :rocket:",
+    success: true,
+    slack_url: "https://hooks.slack.com/services/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"
+  )
+end
+
+private_lane :clean_up do |options|
+  clean_build_artifacts
+end
+
+############################# POST ##############################
+
+after_all do |lane|
+  clean_up
+  reset_git_repo
+  
+  puts "🚢"
+  notification(message: "Finished '#{lane}' successfully")
+end
+
+error do |lane, exception|
+  clean_up
+
+  puts "(╯°□°）╯︵ ┻━┻\n".red
+  notification(message: "'#{lane}' errored")
+end
