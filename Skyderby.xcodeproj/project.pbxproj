@@ -22,6 +22,7 @@
 		55C2D5481F7A87FC00D17DBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2D5421F7A87BB00D17DBB /* ViewController.swift */; };
 		55C2D5491F7A87FE00D17DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2D53F1F7A87BB00D17DBB /* AppDelegate.swift */; };
 		55D871191F8187DD0016AB37 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D871181F8187DD0016AB37 /* Kingfisher.framework */; };
+		55D8711C1F8189C00016AB37 /* UIKit+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8711B1F8189C00016AB37 /* UIKit+Rounded.swift */; };
 		55F3DA271F81175B00BA824A /* SkyderbyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3DA261F81175B00BA824A /* SkyderbyAPI.swift */; };
 		55F3DA291F811B5300BA824A /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3DA281F811B5300BA824A /* NetworkLogger.swift */; };
 		55F3DA2B1F811F5600BA824A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F3DA2A1F811F5600BA824A /* Result.framework */; };
@@ -46,6 +47,7 @@
 		55C2D5421F7A87BB00D17DBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		55C2D5441F7A87BB00D17DBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55D871181F8187DD0016AB37 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		55D8711B1F8189C00016AB37 /* UIKit+Rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Rounded.swift"; sourceTree = "<group>"; };
 		55F3DA261F81175B00BA824A /* SkyderbyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyderbyAPI.swift; sourceTree = "<group>"; };
 		55F3DA281F811B5300BA824A /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 		55F3DA2A1F811F5600BA824A /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			children = (
 				559A178D1F7A8B7B00BB889E /* Constants */,
 				55C2D5401F7A87BB00D17DBB /* Utils */,
+				55D8711A1F8189AE0016AB37 /* Views */,
 				55F3DA251F8116F400BA824A /* Networking */,
 				55A0B7AF1F81701100704A17 /* Models */,
 				55C2D5411F7A87BB00D17DBB /* ViewControllers */,
@@ -180,6 +183,14 @@
 				55C2D5441F7A87BB00D17DBB /* Info.plist */,
 			);
 			path = "Supporting-files";
+			sourceTree = "<group>";
+		};
+		55D8711A1F8189AE0016AB37 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				55D8711B1F8189C00016AB37 /* UIKit+Rounded.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		55F3DA251F8116F400BA824A /* Networking */ = {
@@ -336,6 +347,7 @@
 				559A17931F7A8B8500BB889E /* Storyboards.swift in Sources */,
 				559A17911F7A8B7D00BB889E /* Fonts.swift in Sources */,
 				55C2D5491F7A87FE00D17DBB /* AppDelegate.swift in Sources */,
+				55D8711C1F8189C00016AB37 /* UIKit+Rounded.swift in Sources */,
 				559A17921F7A8B8000BB889E /* Images.swift in Sources */,
 				55F3DA271F81175B00BA824A /* SkyderbyAPI.swift in Sources */,
 				55F3DA2D1F8163C200BA824A /* ProfileTVC.swift in Sources */,

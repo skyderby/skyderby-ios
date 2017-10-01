@@ -5,10 +5,16 @@
 
 import UIKit
 import Reusable
+import Kingfisher
 
 class ProfileTVC: UITableViewController {
 
-    @IBOutlet weak var titleImageView: UIImageView!
+    @IBOutlet weak var titleImageView: UIImageView! {
+        didSet {
+            titleImageView.layer.borderColor = UIColor.darkGray.cgColor
+            titleImageView.layer.borderWidth = 1
+        }
+    }
     @IBOutlet weak var titleLabel: UILabel!
 
     var user: User?
@@ -23,6 +29,9 @@ class ProfileTVC: UITableViewController {
         guard let user = user else { return }
 
         titleLabel.text = user.name
+        titleImageView.kf.setImage(with: user.photo.medium,
+                                   placeholder: UIImage(asset: Asset.logo),
+                                   options: [.transition(.fade(0.2))])
 
         tableView.reloadData()
     }
