@@ -21,6 +21,7 @@
 		55C2D5471F7A87CD00D17DBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C2D53C1F7A87BB00D17DBB /* Main.storyboard */; };
 		55C2D5481F7A87FC00D17DBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2D5421F7A87BB00D17DBB /* ViewController.swift */; };
 		55C2D5491F7A87FE00D17DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2D53F1F7A87BB00D17DBB /* AppDelegate.swift */; };
+		55D871191F8187DD0016AB37 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D871181F8187DD0016AB37 /* Kingfisher.framework */; };
 		55F3DA271F81175B00BA824A /* SkyderbyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3DA261F81175B00BA824A /* SkyderbyAPI.swift */; };
 		55F3DA291F811B5300BA824A /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3DA281F811B5300BA824A /* NetworkLogger.swift */; };
 		55F3DA2B1F811F5600BA824A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F3DA2A1F811F5600BA824A /* Result.framework */; };
@@ -44,6 +45,7 @@
 		55C2D53F1F7A87BB00D17DBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55C2D5421F7A87BB00D17DBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		55C2D5441F7A87BB00D17DBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55D871181F8187DD0016AB37 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		55F3DA261F81175B00BA824A /* SkyderbyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyderbyAPI.swift; sourceTree = "<group>"; };
 		55F3DA281F811B5300BA824A /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 		55F3DA2A1F811F5600BA824A /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				55F3DA2B1F811F5600BA824A /* Result.framework in Frameworks */,
 				55ACCF101F81158900FC633A /* Alamofire.framework in Frameworks */,
 				55A0B7AE1F816EA300704A17 /* Reusable.framework in Frameworks */,
+				55D871191F8187DD0016AB37 /* Kingfisher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +97,7 @@
 		55ACCF0C1F81158900FC633A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				55D871181F8187DD0016AB37 /* Kingfisher.framework */,
 				55A0B7AD1F816EA300704A17 /* Reusable.framework */,
 				55F3DA2A1F811F5600BA824A /* Result.framework */,
 				55ACCF0E1F81158900FC633A /* Alamofire.framework */,
@@ -308,12 +312,14 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Reusable.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Moya.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Reusable.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
