@@ -5,7 +5,7 @@
 
 import Moya
 
-let skyderbyProvider = MoyaProvider<SkyderbyAPI>(plugins: [NetworkLoggerPlugin()])
+let SkyderbyProvider = MoyaProvider<SkyderbyAPI>(plugins: [NetworkLoggerPlugin()])
 
 enum SkyderbyAPI {
     case getUser(userId: Int)

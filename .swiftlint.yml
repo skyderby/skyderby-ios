@@ -5,4 +5,5 @@ disabled_rules:
 line_length: 160
 identifier_name:
   excluded:
+    - SkyderbyProvider
     - id

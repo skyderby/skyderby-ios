@@ -19,7 +19,7 @@ class ViewController: UIViewController {
             return
         }
 
-        skyderbyProvider.request(.getUser(userId: userId)) { result in
+        SkyderbyProvider.request(.getUser(userId: userId)) { result in
             if case let .success(moyaResponse) = result {
                 let decoder = JSONDecoder()
                 let decodeFormatter = DateFormatter()
