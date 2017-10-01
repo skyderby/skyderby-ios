@@ -11,11 +11,16 @@
 		559A17911F7A8B7D00BB889E /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A178E1F7A8B7B00BB889E /* Fonts.swift */; };
 		559A17921F7A8B8000BB889E /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A178F1F7A8B7B00BB889E /* Images.swift */; };
 		559A17931F7A8B8500BB889E /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A17901F7A8B7B00BB889E /* Storyboards.swift */; };
+		55ACCF0F1F81158900FC633A /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55ACCF0D1F81158900FC633A /* Moya.framework */; };
+		55ACCF101F81158900FC633A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55ACCF0E1F81158900FC633A /* Alamofire.framework */; };
 		55C2D5451F7A87C600D17DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C2D5381F7A87BB00D17DBB /* Assets.xcassets */; };
 		55C2D5461F7A87CB00D17DBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C2D53A1F7A87BB00D17DBB /* LaunchScreen.storyboard */; };
 		55C2D5471F7A87CD00D17DBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C2D53C1F7A87BB00D17DBB /* Main.storyboard */; };
 		55C2D5481F7A87FC00D17DBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2D5421F7A87BB00D17DBB /* ViewController.swift */; };
 		55C2D5491F7A87FE00D17DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2D53F1F7A87BB00D17DBB /* AppDelegate.swift */; };
+		55F3DA271F81175B00BA824A /* SkyderbyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3DA261F81175B00BA824A /* SkyderbyAPI.swift */; };
+		55F3DA291F811B5300BA824A /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3DA281F811B5300BA824A /* NetworkLogger.swift */; };
+		55F3DA2B1F811F5600BA824A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F3DA2A1F811F5600BA824A /* Result.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,8 @@
 		559A178E1F7A8B7B00BB889E /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		559A178F1F7A8B7B00BB889E /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		559A17901F7A8B7B00BB889E /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		55ACCF0D1F81158900FC633A /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		55ACCF0E1F81158900FC633A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		55C2D5221F7A876000D17DBB /* Skyderby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skyderby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C2D5381F7A87BB00D17DBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55C2D53B1F7A87BB00D17DBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,6 +37,9 @@
 		55C2D53F1F7A87BB00D17DBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55C2D5421F7A87BB00D17DBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		55C2D5441F7A87BB00D17DBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55F3DA261F81175B00BA824A /* SkyderbyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyderbyAPI.swift; sourceTree = "<group>"; };
+		55F3DA281F811B5300BA824A /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		55F3DA2A1F811F5600BA824A /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55ACCF0F1F81158900FC633A /* Moya.framework in Frameworks */,
+				55F3DA2B1F811F5600BA824A /* Result.framework in Frameworks */,
+				55ACCF101F81158900FC633A /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +73,16 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		55ACCF0C1F81158900FC633A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55F3DA2A1F811F5600BA824A /* Result.framework */,
+				55ACCF0E1F81158900FC633A /* Alamofire.framework */,
+				55ACCF0D1F81158900FC633A /* Moya.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		55C2D5191F7A875F00D17DBB = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +90,7 @@
 				55C2D5371F7A87BB00D17DBB /* Resources */,
 				55C2D5431F7A87BB00D17DBB /* Supporting-files */,
 				55C2D5231F7A876000D17DBB /* Products */,
+				55ACCF0C1F81158900FC633A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +126,7 @@
 			children = (
 				559A178D1F7A8B7B00BB889E /* Constants */,
 				55C2D5401F7A87BB00D17DBB /* Utils */,
+				55F3DA251F8116F400BA824A /* Networking */,
 				55C2D5411F7A87BB00D17DBB /* ViewControllers */,
 				55C2D53F1F7A87BB00D17DBB /* AppDelegate.swift */,
 			);
@@ -132,6 +157,15 @@
 			path = "Supporting-files";
 			sourceTree = "<group>";
 		};
+		55F3DA251F8116F400BA824A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				55F3DA261F81175B00BA824A /* SkyderbyAPI.swift */,
+				55F3DA281F811B5300BA824A /* NetworkLogger.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +179,7 @@
 				55C2D5201F7A875F00D17DBB /* Resources */,
 				559A17881F7A888A00BB889E /* ShellScript */,
 				559A17941F7A8BC400BB889E /* ShellScript */,
+				55ACCF111F8115A300FC633A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -242,6 +277,25 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
+		55ACCF111F8115A300FC633A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Moya.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -249,10 +303,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55F3DA291F811B5300BA824A /* NetworkLogger.swift in Sources */,
 				559A17931F7A8B8500BB889E /* Storyboards.swift in Sources */,
 				559A17911F7A8B7D00BB889E /* Fonts.swift in Sources */,
 				55C2D5491F7A87FE00D17DBB /* AppDelegate.swift in Sources */,
 				559A17921F7A8B8000BB889E /* Images.swift in Sources */,
+				55F3DA271F81175B00BA824A /* SkyderbyAPI.swift in Sources */,
 				55C2D5481F7A87FC00D17DBB /* ViewController.swift in Sources */,
 				559A178A1F7A88BB00BB889E /* Log.swift in Sources */,
 			);
@@ -393,6 +449,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5567X9EQ9Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting-files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.skyderby.Skyderby;
@@ -408,6 +468,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5567X9EQ9Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting-files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.skyderby.Skyderby;
