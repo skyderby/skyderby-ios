@@ -60,7 +60,9 @@ enum StoryboardScene {
   enum Main: StoryboardType {
     static let storyboardName = "Main"
 
-    static let initialScene = InitialSceneType<ViewController>(storyboard: Main.self)
+    static let initialScene = InitialSceneType<UINavigationController>(storyboard: Main.self)
+
+    static let profileTVC = SceneType<Skyderby.ProfileTVC>(storyboard: Main.self, identifier: "ProfileTVC")
   }
 }
 
