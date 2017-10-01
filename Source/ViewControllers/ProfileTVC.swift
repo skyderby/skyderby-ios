@@ -4,6 +4,7 @@
 //  Copyright © 2017 Skyderby. All rights reserved.
 
 import UIKit
+import Reusable
 
 class ProfileTVC: UITableViewController {
 
@@ -26,13 +27,17 @@ class ProfileTVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "OnlineCompetitionCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(for: indexPath) as OnlineCompetitionCell
 
         return cell
     }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
 
-class OnlineCompetitionCell: UITableViewCell {
+class OnlineCompetitionCell: UITableViewCell, Reusable {
     @IBOutlet weak var placeLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
 

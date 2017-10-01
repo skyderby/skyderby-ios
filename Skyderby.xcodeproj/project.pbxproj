@@ -11,6 +11,7 @@
 		559A17911F7A8B7D00BB889E /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A178E1F7A8B7B00BB889E /* Fonts.swift */; };
 		559A17921F7A8B8000BB889E /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A178F1F7A8B7B00BB889E /* Images.swift */; };
 		559A17931F7A8B8500BB889E /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A17901F7A8B7B00BB889E /* Storyboards.swift */; };
+		55A0B7AE1F816EA300704A17 /* Reusable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A0B7AD1F816EA300704A17 /* Reusable.framework */; };
 		55ACCF0F1F81158900FC633A /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55ACCF0D1F81158900FC633A /* Moya.framework */; };
 		55ACCF101F81158900FC633A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55ACCF0E1F81158900FC633A /* Alamofire.framework */; };
 		55C2D5451F7A87C600D17DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C2D5381F7A87BB00D17DBB /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		559A178E1F7A8B7B00BB889E /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		559A178F1F7A8B7B00BB889E /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		559A17901F7A8B7B00BB889E /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		55A0B7AD1F816EA300704A17 /* Reusable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reusable.framework; path = Carthage/Build/iOS/Reusable.framework; sourceTree = "<group>"; };
 		55ACCF0D1F81158900FC633A /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
 		55ACCF0E1F81158900FC633A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		55C2D5221F7A876000D17DBB /* Skyderby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skyderby.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +54,7 @@
 				55ACCF0F1F81158900FC633A /* Moya.framework in Frameworks */,
 				55F3DA2B1F811F5600BA824A /* Result.framework in Frameworks */,
 				55ACCF101F81158900FC633A /* Alamofire.framework in Frameworks */,
+				55A0B7AE1F816EA300704A17 /* Reusable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +81,7 @@
 		55ACCF0C1F81158900FC633A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				55A0B7AD1F816EA300704A17 /* Reusable.framework */,
 				55F3DA2A1F811F5600BA824A /* Result.framework */,
 				55ACCF0E1F81158900FC633A /* Alamofire.framework */,
 				55ACCF0D1F81158900FC633A /* Moya.framework */,
@@ -289,11 +293,13 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Reusable.framework",
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Moya.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Reusable.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

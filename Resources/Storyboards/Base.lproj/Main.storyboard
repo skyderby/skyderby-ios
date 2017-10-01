@@ -98,7 +98,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OnlineCompetitionCell" id="Y47-ic-vjc">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OnlineCompetitionCell" id="Y47-ic-vjc" customClass="OnlineCompetitionCell" customModule="Skyderby" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="215.5" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y47-ic-vjc" id="dWj-Q3-BQ0">
@@ -129,6 +129,10 @@
                                         <constraint firstItem="cgx-kf-hL1" firstAttribute="leading" secondItem="dWj-Q3-BQ0" secondAttribute="leading" constant="20" id="wAx-zD-pLu"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="placeLabel" destination="cgx-kf-hL1" id="naw-3a-tz4"/>
+                                    <outlet property="titleLabel" destination="knl-hL-aW9" id="t8A-k9-6br"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
