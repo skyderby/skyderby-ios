@@ -17,9 +17,9 @@ struct Photo: Codable {
         let medium = try container.decode(String.self, forKey: .medium)
         let thumb = try container.decode(String.self, forKey: .thumb)
 
-        self.original = URL(string: "https://skyderby.ru" + original)!
-        self.medium = URL(string: "https://skyderby.ru" + medium)!
-        self.thumb = URL(string: "https://skyderby.ru" + thumb)!
+        self.original = URL(string: SkyderbyAPI.baseDomain.appending(original))!
+        self.medium = URL(string: SkyderbyAPI.baseDomain.appending(medium))!
+        self.thumb = URL(string: SkyderbyAPI.baseDomain.appending(thumb))!
     }
 }
 

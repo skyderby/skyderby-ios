@@ -13,7 +13,8 @@ enum SkyderbyAPI {
 }
 
 extension SkyderbyAPI: TargetType {
-    var baseURL: URL { return URL(string: "https://skyderby.ru/api/v1")! }
+    static var baseDomain = "https://skyderby.ru"
+    var baseURL: URL { return URL(string: SkyderbyAPI.baseDomain.appending("/api/v1"))! }
 
     var path: String {
         switch self {
