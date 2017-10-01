@@ -11,9 +11,18 @@ class ProfileTVC: UITableViewController {
     @IBOutlet weak var titleImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
 
+    var user: User?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupUser()
+    }
+
+    func setupUser() {
+        guard let user = user else { return }
+
+        titleLabel.text = user.name
     }
 
     // MARK: - Table view data source
