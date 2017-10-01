@@ -21,7 +21,11 @@ class ViewController: UIViewController {
 
         skyderbyProvider.request(.getUser(userId: userId)) { result in
             if case let .success(moyaResponse) = result {
-                let user = try? JSONDecoder().decode(User.self, from: moyaResponse.data)
+                let decoder = JSONDecoder()
+                let decodeFormatter = DateFormatter()
+                decodeFormatter.dateFormat = "YYYY-MM-dd"
+                decoder.dateDecodingStrategy = .formatted(decodeFormatter)
+                let user = try? decoder.decode(User.self, from: moyaResponse.data)
 
                 let vc = StoryboardScene.Main.profileTVC.instantiate()
                 vc.user = user

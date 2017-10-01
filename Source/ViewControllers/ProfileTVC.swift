@@ -23,6 +23,8 @@ class ProfileTVC: UITableViewController {
         guard let user = user else { return }
 
         titleLabel.text = user.name
+
+        tableView.reloadData()
     }
 
     // MARK: - Table view data source
@@ -32,11 +34,15 @@ class ProfileTVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return user?.personalScores.count ?? 0
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath) as OnlineCompetitionCell
+
+        if let user = user, user.personalScores.count > indexPath.row {
+            cell.configure(result: user.personalScores[indexPath.row])
+        }
 
         return cell
     }
@@ -50,8 +56,8 @@ class OnlineCompetitionCell: UITableViewCell, Reusable {
     @IBOutlet weak var placeLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
 
-    func configure(place: Int, name: String) {
-        placeLabel.text = String(place)
-        titleLabel.text = "in \(name)"
+    func configure(result: OnlineCompetitionResult) {
+        placeLabel.text = String(result.overallRank)
+        titleLabel.text = "in \(result.competition.name)"
     }
 }

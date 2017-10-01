@@ -13,6 +13,7 @@
 		559A17931F7A8B8500BB889E /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A17901F7A8B7B00BB889E /* Storyboards.swift */; };
 		55A0B7AE1F816EA300704A17 /* Reusable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A0B7AD1F816EA300704A17 /* Reusable.framework */; };
 		55A0B7B11F81701E00704A17 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A0B7B01F81701E00704A17 /* User.swift */; };
+		55A0B7B31F81763900704A17 /* OnlineCompetition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A0B7B21F81763900704A17 /* OnlineCompetition.swift */; };
 		55ACCF0F1F81158900FC633A /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55ACCF0D1F81158900FC633A /* Moya.framework */; };
 		55ACCF101F81158900FC633A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55ACCF0E1F81158900FC633A /* Alamofire.framework */; };
 		55C2D5451F7A87C600D17DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C2D5381F7A87BB00D17DBB /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		559A17901F7A8B7B00BB889E /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		55A0B7AD1F816EA300704A17 /* Reusable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reusable.framework; path = Carthage/Build/iOS/Reusable.framework; sourceTree = "<group>"; };
 		55A0B7B01F81701E00704A17 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		55A0B7B21F81763900704A17 /* OnlineCompetition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineCompetition.swift; sourceTree = "<group>"; };
 		55ACCF0D1F81158900FC633A /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
 		55ACCF0E1F81158900FC633A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		55C2D5221F7A876000D17DBB /* Skyderby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skyderby.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				55A0B7B01F81701E00704A17 /* User.swift */,
+				55A0B7B21F81763900704A17 /* OnlineCompetition.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				55F3DA271F81175B00BA824A /* SkyderbyAPI.swift in Sources */,
 				55F3DA2D1F8163C200BA824A /* ProfileTVC.swift in Sources */,
 				55C2D5481F7A87FC00D17DBB /* ViewController.swift in Sources */,
+				55A0B7B31F81763900704A17 /* OnlineCompetition.swift in Sources */,
 				55A0B7B11F81701E00704A17 /* User.swift in Sources */,
 				559A178A1F7A88BB00BB889E /* Log.swift in Sources */,
 			);

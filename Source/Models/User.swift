@@ -27,11 +27,12 @@ struct User: Codable {
     let id: Int
     let name: String
     let photo: Photo
+    let personalScores: [OnlineCompetitionResult]
 
     enum CodingKeys: String, CodingKey {
         case id
         case name
         case photo
-//        case personalScores = "personal_scores"
+        case personalScores = "personal_scores"
     }
 }
