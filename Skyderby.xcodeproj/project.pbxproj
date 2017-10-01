@@ -43,13 +43,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		559A178C1F7A8B6F00BB889E /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
 		559A178D1F7A8B7B00BB889E /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +51,13 @@
 				559A17901F7A8B7B00BB889E /* Storyboards.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		55ACCF0B1F80DE2800FC633A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		55C2D5191F7A875F00D17DBB = {
@@ -82,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				55C2D5391F7A87BB00D17DBB /* Storyboards */,
-				559A178C1F7A8B6F00BB889E /* Fonts */,
+				55ACCF0B1F80DE2800FC633A /* Fonts */,
 				55C2D5381F7A87BB00D17DBB /* Assets.xcassets */,
 			);
 			path = Resources;
