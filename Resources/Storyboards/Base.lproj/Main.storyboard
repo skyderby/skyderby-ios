@@ -60,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="372" y="31.934032983508249"/>
+            <point key="canvasLocation" x="359" y="32"/>
         </scene>
         <!--ProfileTVC-->
         <scene sceneID="eJS-Ic-g8u">
@@ -71,18 +71,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="hr1-vL-TId">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="HlU-Tc-IJC" customClass="RoundedImageView" customModule="Skyderby" customModuleProvider="target">
-                                    <rect key="frame" x="137.5" y="15" width="100" height="100"/>
+                                    <rect key="frame" x="137.5" y="25" width="100" height="100"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="100" id="8FZ-F4-c6z"/>
                                         <constraint firstAttribute="width" secondItem="HlU-Tc-IJC" secondAttribute="height" multiplier="1:1" id="uM6-qC-ncg"/>
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aleksandr Kunin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phC-JZ-5LS">
-                                    <rect key="frame" x="20" y="120" width="335" height="21"/>
+                                    <rect key="frame" x="20" y="130" width="335" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -90,7 +90,7 @@
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="HlU-Tc-IJC" firstAttribute="centerY" secondItem="hr1-vL-TId" secondAttribute="centerY" constant="-15" id="CAs-aj-h1w"/>
+                                <constraint firstItem="HlU-Tc-IJC" firstAttribute="centerY" secondItem="hr1-vL-TId" secondAttribute="centerY" id="CAs-aj-h1w"/>
                                 <constraint firstAttribute="trailing" secondItem="phC-JZ-5LS" secondAttribute="trailing" constant="20" id="IrX-Fg-IRZ"/>
                                 <constraint firstItem="HlU-Tc-IJC" firstAttribute="centerX" secondItem="hr1-vL-TId" secondAttribute="centerX" id="LFL-VX-7QL"/>
                                 <constraint firstItem="phC-JZ-5LS" firstAttribute="top" secondItem="HlU-Tc-IJC" secondAttribute="bottom" constant="5" id="Y8P-w8-ih3"/>
@@ -99,7 +99,7 @@
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OnlineCompetitionCell" id="Y47-ic-vjc" customClass="OnlineCompetitionCell" customModule="Skyderby" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="215.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="205.5" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y47-ic-vjc" id="dWj-Q3-BQ0">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>

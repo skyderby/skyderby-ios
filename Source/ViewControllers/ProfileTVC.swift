@@ -11,7 +11,7 @@ class ProfileTVC: UITableViewController {
 
     @IBOutlet weak var titleImageView: UIImageView! {
         didSet {
-            titleImageView.layer.borderColor = UIColor.darkGray.cgColor
+            titleImageView.layer.borderColor = UIColor.lightGray.cgColor
             titleImageView.layer.borderWidth = 1
         }
     }
@@ -21,6 +21,8 @@ class ProfileTVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        tableView.rowHeight = 44
 
         setupUser()
     }
@@ -40,6 +42,10 @@ class ProfileTVC: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
+    }
+
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Online Competitions"
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
