@@ -18,8 +18,6 @@ lane :setup do
   # Install SwiftLint
   sh "brew install swiftlint"
   # Install Carthage
-  sh "brew install configen"
-  # Install Carthage
   sh "brew install carthage"
   # Verify project dependencies
   carthage update
@@ -41,9 +39,9 @@ end
 private_lane :itc do |options|
   scheme = options[:scheme]
   
-  match(type: "appstore", readonly: true)
+  match(git_url: "git@gitlab.com:ealeksandrov/codesigning.git", type: "appstore", readonly: true)
   
-  gym(scheme: scheme)
+  gym(scheme: scheme, export_xcargs: "-allowProvisioningUpdates")
   get_version_numbers
   
   pilot(skip_submission: true, skip_waiting_for_build_processing: true)
