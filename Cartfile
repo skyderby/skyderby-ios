@@ -1,3 +1,4 @@
 github "Moya/Moya"
 github "AliSoftware/Reusable"
 github "onevcat/Kingfisher"
+github "SVProgressHUD/SVProgressHUD"

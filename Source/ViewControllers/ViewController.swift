@@ -4,6 +4,7 @@
 //  Copyright © 2017 Skyderby. All rights reserved.
 
 import UIKit
+import SVProgressHUD
 
 class ViewController: UIViewController {
 
@@ -19,7 +20,9 @@ class ViewController: UIViewController {
             return
         }
 
+        SVProgressHUD.show()
         SkyderbyProvider.request(.getUser(userId: userId)) { result in
+            SVProgressHUD.dismiss()
             if case let .success(moyaResponse) = result {
                 let decoder = JSONDecoder()
                 let decodeFormatter = DateFormatter()

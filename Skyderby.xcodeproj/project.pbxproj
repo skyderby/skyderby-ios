@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		556AD7611F8205D300B48F84 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556AD7601F8205D300B48F84 /* SVProgressHUD.framework */; };
 		559A178A1F7A88BB00BB889E /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A17891F7A88BB00BB889E /* Log.swift */; };
 		559A17911F7A8B7D00BB889E /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A178E1F7A8B7B00BB889E /* Fonts.swift */; };
 		559A17921F7A8B8000BB889E /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A178F1F7A8B7B00BB889E /* Images.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		556AD7601F8205D300B48F84 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		559A17891F7A88BB00BB889E /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		559A178E1F7A8B7B00BB889E /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		559A178F1F7A8B7B00BB889E /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				55ACCF101F81158900FC633A /* Alamofire.framework in Frameworks */,
 				55A0B7AE1F816EA300704A17 /* Reusable.framework in Frameworks */,
 				55D871191F8187DD0016AB37 /* Kingfisher.framework in Frameworks */,
+				556AD7611F8205D300B48F84 /* SVProgressHUD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +102,7 @@
 		55ACCF0C1F81158900FC633A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				556AD7601F8205D300B48F84 /* SVProgressHUD.framework */,
 				55D871181F8187DD0016AB37 /* Kingfisher.framework */,
 				55A0B7AD1F816EA300704A17 /* Reusable.framework */,
 				55F3DA2A1F811F5600BA824A /* Result.framework */,
@@ -324,6 +328,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Reusable.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
@@ -331,6 +336,7 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Reusable.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Kingfisher.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

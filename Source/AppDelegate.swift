@@ -4,6 +4,7 @@
 //  Copyright © 2017 Skyderby. All rights reserved.
 
 import UIKit
+import SVProgressHUD
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         Log.info("Starting \(AppDelegate.bundleId) v\(AppDelegate.bundleShortVersion) (\(AppDelegate.bundleVersion))")
+
+        SVProgressHUD.setDefaultMaskType(.clear)
+        SVProgressHUD.setGraceTimeInterval(1)
 
         return true
     }
