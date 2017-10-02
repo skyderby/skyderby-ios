@@ -23,17 +23,37 @@ struct OnlineCompetitionGroup: Codable {
 }
 
 struct OnlineCompetition: Codable {
+    enum JumpsKind: String, Codable {
+        case skydive
+        case base
+    }
+
+    enum SuitsKind: String, Codable {
+        case wingsuit
+        case tracksuit
+        case monotrack
+        case slick
+    }
+
+    enum Discipline: String, Codable {
+        case time
+        case distance
+        case speed
+        case distanceInTime = "distance_in_time"
+        case distanceInAltitude = "distance_in_altitude"
+    }
+
     let id: Int
     let name: String
-    let discipline: String
+    let discipline: Discipline
 
     let rangeFrom: Double
     let rangeTo: Double
     let disciplineParameter: Int
     let periodFrom: Date
     let periodTo: Date
-    let jumpsKind: String
-    let suitsKind: String
+    let jumpsKind: JumpsKind
+    let suitsKind: SuitsKind
     let displayHighestGr: Bool
     let displayHighestSpeed: Bool
     let units: String
