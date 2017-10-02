@@ -30,9 +30,15 @@ class ViewController: UIViewController {
                 decoder.dateDecodingStrategy = .formatted(decodeFormatter)
                 let user = try? decoder.decode(User.self, from: moyaResponse.data)
 
-                let vc = StoryboardScene.Main.profileTVC.instantiate()
-                vc.user = user
-                self.navigationController?.pushViewController(vc, animated: true)
+                if let user = user {
+                    let vc = StoryboardScene.Main.profileTVC.instantiate()
+                    vc.user = user
+                    self.navigationController?.pushViewController(vc, animated: true)
+                } else {
+                    UIAlertController.show(title: "User not found")
+                }
+            } else {
+                UIAlertController.show(title: "Network error")
             }
         }
     }

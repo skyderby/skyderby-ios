@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5523492B1F823D4D004BD33B /* UIAlertController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5523492A1F823D4D004BD33B /* UIAlertController+Additions.swift */; };
 		556AD7611F8205D300B48F84 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556AD7601F8205D300B48F84 /* SVProgressHUD.framework */; };
 		559A178A1F7A88BB00BB889E /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A17891F7A88BB00BB889E /* Log.swift */; };
 		559A17911F7A8B7D00BB889E /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A178E1F7A8B7B00BB889E /* Fonts.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5523492A1F823D4D004BD33B /* UIAlertController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Additions.swift"; sourceTree = "<group>"; };
 		556AD7601F8205D300B48F84 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		559A17891F7A88BB00BB889E /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		559A178E1F7A8B7B00BB889E /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				559A17891F7A88BB00BB889E /* Log.swift */,
+				5523492A1F823D4D004BD33B /* UIAlertController+Additions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				55F3DA291F811B5300BA824A /* NetworkLogger.swift in Sources */,
 				559A17931F7A8B8500BB889E /* Storyboards.swift in Sources */,
 				559A17911F7A8B7D00BB889E /* Fonts.swift in Sources */,
+				5523492B1F823D4D004BD33B /* UIAlertController+Additions.swift in Sources */,
 				55C2D5491F7A87FE00D17DBB /* AppDelegate.swift in Sources */,
 				55D8711C1F8189C00016AB37 /* UIKit+Rounded.swift in Sources */,
 				559A17921F7A8B8000BB889E /* Images.swift in Sources */,
