@@ -7,25 +7,43 @@ import Foundation
 import os.log
 
 public struct Log {
+
+    @available(iOS 10.0, *)
     static let log = OSLog(subsystem: Bundle.main.bundleIdentifier ?? "unknown", category: "App")
 
     // (off by default, never saved to disk)
     static public func debug(_ message: Any) {
-        os_log("◾️ %@", log: log, type: .debug, "\(message)")
+        if #available(iOS 10.0, *) {
+            os_log("◾️ %@", log: log, type: .debug, "\(message)")
+        } else {
+            print("◾️ \(message)")
+        }
     }
 
     // (defaults to memory, saved to disk if there is error or fault)
     static public func info(_ message: Any) {
-        os_log("🔷 %@", log: log, type: .info, "\(message)")
+        if #available(iOS 10.0, *) {
+            os_log("🔷 %@", log: log, type: .info, "\(message)")
+        } else {
+            print("🔷 \(message)")
+        }
     }
 
     // (always saved to disk)
     static public func warning(_ message: Any) {
-        os_log("🔶 %@", log: log, type: .default, "\(message)")
+        if #available(iOS 10.0, *) {
+            os_log("🔶 %@", log: log, type: .default, "\(message)")
+        } else {
+            print("🔶 \(message)")
+        }
     }
 
     // (always saved  to disk)
     static public func error(_ message: Any) {
-        os_log("❌ %@", log: log, type: .error, "\(message)")
+        if #available(iOS 10.0, *) {
+            os_log("❌ %@", log: log, type: .error, "\(message)")
+        } else {
+            print("❌ \(message)")
+        }
     }
 }
